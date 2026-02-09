@@ -23,11 +23,13 @@ header {
     }
 
         .BOITE-DES-LIENS a {/*LIENS*/
-            padding-top: 14px;/*espace haut au dessus des liens*/            
+            padding-top: 14px;/*espace haut au dessus des liens*/
+            border-top: 2px solid transparent;            
         }
 
         .BOITE-DES-LIENS a:hover {/*LIENS - SURVOL*/
-            border-top: 2px solid blue;
+            border-top: 2px solid var(--main-color);
+            color: var(--main-color);
             padding-top: 14px;            
         }
 
@@ -111,8 +113,12 @@ main {
                 background-color: white;
                 padding: 0 19px;
             }
+            .FILTRES button:hover {
+                background-color: var(--filter-bg-color);
+            }
 
                 .FILTRES i {
+                    padding-right: 10px;
                 }
 
         .INFOBAR {
@@ -257,6 +263,7 @@ main {
                                                             /*████████████████████████*/
 .activites {
     padding: 30px;
+    margin-top: 30px;
 }
     .activites-title {
     }
@@ -283,6 +290,12 @@ main {
                     border-top-left-radius: 25px;
                     border-top-right-radius: 25px;
                 }
+                .activites .card-title {
+                    padding-left: 15px;
+                }
+                    .activites h3 {
+                        font-size: 16px;
+                    }
 
 
 
@@ -305,17 +318,26 @@ main {
 footer {
     background-color: var(--main-bg-color);
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    padding: 30px;
 }
     footer div {
-        margin: 30px 20px 30px 60px;
+        flex: 1;/* Chaque colonne prend 33% de la largeur du footer */
+        margin-left: 30px;
     }
-        ul {
-
+        footer ul {
             padding: 0;/*annule le padding par defaut*/
             margin: 0;/*annule la marge par defaut*/
-            list-style-type: none;
+            list-style-type: none;/*enlève les points par defaut*/
         }
+            footer li {
+                margin-top: 10px;
+            }
+            footer li:first-child {
+                margin-top: 0;
+                margin-bottom: 20px;
+            }
+
 
 
 
