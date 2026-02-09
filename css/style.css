@@ -205,6 +205,10 @@ main {
                     }
                         .hebergements-cards i {                            
                         }
+        .hebergements h3 {
+            margin: 0;
+            padding-top: 30px;
+        }
 
 /*************************************POPULAIRES***************************************/
 .populaires {
