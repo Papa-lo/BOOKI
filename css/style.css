@@ -105,6 +105,10 @@ main {
             gap: 15px;/*pour pouvoir utiliser gap*/
             flex-wrap: wrap;/*et obligé de laisser aller a la ligne*/
         }
+            .FILTRES h2 {
+                margin: 0;
+                font-size: 18px;
+            }
 
             .FILTRES button {
                 height: 50px;
