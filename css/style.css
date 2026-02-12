@@ -123,6 +123,7 @@ main {
 
         .INFOBAR {
             display: flex;/*mets "i" et "plus de 500 ..." cote à cote*/
+            align-items: center;
             gap: 17px;/*ecarte un peu les 2*/
             margin-top: 35px;
         }
@@ -136,6 +137,9 @@ main {
                 justify-content: center;
                 border-radius: 50%;
                 font-size: 12px;
+           }
+           .INFOBAR p {
+            margin: 0;
            }
            
                                                             /*█████████████████████████*/
